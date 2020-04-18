@@ -51,7 +51,7 @@ body{
 
   &__image {
     @media (max-width: 600px) {
-      width: 100px;
+      width: 300px;
     }
     @media (max-width: 900px) {
       justify-content: center;
@@ -68,6 +68,9 @@ body{
   }
 
   &__title {
+    @media (max-width: 600 px) {
+      font-size: 10px;
+    }
     text-align: center;
     line-height: 60px;
     width: 45%;

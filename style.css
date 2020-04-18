@@ -49,7 +49,7 @@ body {
 }
 @media (max-width: 600px) {
   .block__image {
-    width: 100px;
+    width: 300px;
   }
 }
 @media (max-width: 900px) {
@@ -68,6 +68,11 @@ body {
   line-height: 60px;
   width: 45%;
   margin: auto;
+}
+@media (max-width: 600 px) {
+  .block__title {
+    font-size: 10px;
+  }
 }
 .block__button {
   width: 189px;
