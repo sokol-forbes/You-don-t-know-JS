@@ -1,41 +1,109 @@
-body{
-  background-color:#ebeae6;
+body {
+  background-color: #ebeae6;
 }
-.navbar{
-  background-color:rgb(54,54,54);
+
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+}
+
+.container__text {
+  line-height: 70px;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #363636;
   display: flex;
-    justify-content: center;
-    margin: 0px;
-    border: none;
-    padding: none;
+  justify-content: center;
+  margin: 0px;
+  border: none;
+  padding: 0;
 }
-.navbar__link{
-  color:white;
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+.navbar__link {
+  color: white;
   text-decoration: none;
   margin: 0 10px;
   padding: 15px 0;
   font-size: 14px;
   text-align: center;
 }
-.container__text{
-  text-align: center;
-}
 
-.mid__part{
+.mid-part {
   display: flex;
 }
-.mid__part div{
-  padding: 10px;
-}
-.picture__wrapper{
-  flex: 1;
+@media (max-width: 900px) {
+  .mid-part {
+    flex-direction: column;
+  }
 }
 
-.text__wrapper{
-  flex: 1;
+.block {
+  flex-grow: 1;
 }
-* {
-  margin: 0;
-  font-family: "Open Sans", sans-serif;
-  border: none;
+@media (max-width: 600px) {
+  .block__image {
+    width: 100px;
+  }
 }
+@media (max-width: 900px) {
+  .block__image {
+    justify-content: center;
+  }
+}
+.block__img-wrapper {
+  padding-left: 80px;
+}
+.block__title-wrapper {
+  padding-top: 70px;
+}
+.block__title {
+  text-align: center;
+  line-height: 60px;
+  width: 45%;
+  margin: auto;
+}
+.block__button {
+  width: 189px;
+  height: 38px;
+  margin: auto;
+  display: block;
+}
+
+.button {
+  background-color: #d39e0c;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 4%;
+}
+
+.footer {
+  height: 200px;
+  background-color: #100229;
+}
+.footer__title {
+  color: #fff;
+  text-align: center;
+  line-height: 56px;
+  padding-top: 54px;
+}
+.footer__button {
+  width: 30%;
+  height: 28px;
+  margin: auto;
+  display: block;
+}
+@media (max-width: 850px) {
+  .footer__button {
+    font-size: 10px;
+    width: 195px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
