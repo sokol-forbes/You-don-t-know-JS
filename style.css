@@ -47,6 +47,17 @@ body {
 .block {
   flex-grow: 1;
 }
+@media (max-width: 900px) {
+  .block {
+    margin: auto;
+  }
+}
+@media (max-width: 900px) {
+  .block__image {
+    margin: auto;
+    padding-left: 0px;
+  }
+}
 @media (max-width: 600px) {
   .block__image {
     width: 300px;
@@ -55,10 +66,16 @@ body {
 @media (max-width: 900px) {
   .block__image {
     justify-content: center;
+    margin: auto;
   }
 }
 .block__img-wrapper {
   padding-left: 80px;
+}
+@media (max-width: 900px) {
+  .block__img-wrapper {
+    padding-left: 0px;
+  }
 }
 .block__title-wrapper {
   padding-top: 70px;

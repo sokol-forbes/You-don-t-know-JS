@@ -48,18 +48,30 @@ body{
 
 .block {
   flex-grow: 1;
+  @media (max-width: 900px) {
+    margin: auto;
+   }
 
   &__image {
+    @media (max-width: 900px) {
+     margin: auto;
+     padding-left: 0px;
+    }
     @media (max-width: 600px) {
       width: 300px;
     }
     @media (max-width: 900px) {
       justify-content: center;
+      margin: auto;
     }
   }
 
   &__img-wrapper {
+    
     padding-left: 80px;
+    @media (max-width: 900px) {
+      padding-left: 0px;
+    }
 
   }
 
